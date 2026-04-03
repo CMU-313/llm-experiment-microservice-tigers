@@ -27,9 +27,7 @@ jobs:
         uses: astral-sh/setup-uv@v7
       
       - name: Install dependencies
-        working-directory: ./translator
         run: uv sync
 
       - name: Run tests
-        working-directory: ./translator
         run: uv run pytest
