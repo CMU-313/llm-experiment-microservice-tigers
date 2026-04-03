@@ -103,6 +103,6 @@ def translate_content(content: str) -> tuple:
             translated = get_translation(content)
             if not translated or len(translated.strip()) == 0:
                 translated = content
-            return (is_english, translated)
+        return (is_english, translated)
     except Exception:
         return (True, content)
